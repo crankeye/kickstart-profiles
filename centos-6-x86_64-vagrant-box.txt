@@ -92,6 +92,12 @@ rm -f /etc/udev/rules.d/70-persistent-net.rules
 
 yum update -y
 
+#install virtualbox guest additions
+yum install gcc make -y
+yum install kernel-devel -y
+mount -r /dev/cdrom1 /media
+sh /media/VBoxLinuxAdditions.run
+
 yum clean all
 
 rm -rf /tmp/*
