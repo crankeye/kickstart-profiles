@@ -86,7 +86,7 @@ sudo rpm -ivh https://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release
 yum install puppet -y
 
 #install chef
-curl -L https://www.opscode.com/chef/install.sh | bash
+#curl -L https://www.opscode.com/chef/install.sh | bash
 
 rm -f /etc/udev/rules.d/70-persistent-net.rules
 
