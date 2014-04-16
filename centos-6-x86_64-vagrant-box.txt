@@ -95,7 +95,7 @@ yum update -y
 #install virtualbox guest additions
 yum install gcc make -y
 yum install kernel-devel -y
-mount -r /dev/cdrom1 /media
+mount -r /dev/sr1 /media
 sh /media/VBoxLinuxAdditions.run
 
 yum clean all
